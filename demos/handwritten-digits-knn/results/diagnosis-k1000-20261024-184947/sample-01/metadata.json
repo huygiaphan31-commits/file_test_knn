@@ -1,0 +1,15 @@
+{
+  "image": "sample-01.png",
+  "ground_truth": "Ketqua",
+  "ground_truth_status": "confirmed",
+  "regions": 6,
+  "expected_char_count": 6,
+  "alignment_available": "True",
+  "prediction": "Lcl ll0",
+  "region_predictions": "Lclll0",
+  "correct_regions": 0,
+  "scored_regions": 6,
+  "accuracy_on_this_image": "0.000000",
+  "debug_dir": "results\\diagnosis-k1000-20261024-184947\\sample-01",
+  "alignment_note": ""
+}

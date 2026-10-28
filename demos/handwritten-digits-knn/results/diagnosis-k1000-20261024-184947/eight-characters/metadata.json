@@ -1,0 +1,15 @@
+{
+  "image": "eight-characters.png",
+  "ground_truth": "aAbBcCdD",
+  "ground_truth_status": "confirmed",
+  "regions": 9,
+  "expected_char_count": 8,
+  "alignment_available": "False",
+  "prediction": "jlh3cj0l0",
+  "region_predictions": "jlh3cj0l0",
+  "correct_regions": "",
+  "scored_regions": 0,
+  "accuracy_on_this_image": "",
+  "debug_dir": "results\\diagnosis-k1000-20261024-184947\\eight-characters",
+  "alignment_note": "Ground truth has 8 characters but segmentation returned 9 regions; per-region truth alignment is unsafe."
+}

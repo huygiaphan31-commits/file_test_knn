@@ -1,0 +1,15 @@
+{
+  "image": "sample-02.png",
+  "ground_truth": "",
+  "ground_truth_status": "unknown_not_scored",
+  "regions": 16,
+  "expected_char_count": "",
+  "alignment_available": "False",
+  "prediction": "l jjhIi0ji mIblLl I",
+  "region_predictions": "ljjhIi0jimIblLlI",
+  "correct_regions": "",
+  "scored_regions": 0,
+  "accuracy_on_this_image": "",
+  "debug_dir": "results\\diagnosis-k1000-20261024-184947\\sample-02",
+  "alignment_note": ""
+}

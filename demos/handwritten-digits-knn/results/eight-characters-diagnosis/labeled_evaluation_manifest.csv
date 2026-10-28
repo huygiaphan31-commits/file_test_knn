@@ -1,0 +1,3 @@
+image,ground_truth_characters,ground_truth_source,evaluation_role,label_confirmed_before_prediction,used_for_method_selection,used_in_prior_diagnostics
+data/my_samples/eight-characters.png,aAbBcCdD,user-confirmed in conversation; used for initial contrast pilot,pilot,yes,yes,yes
+data/my_samples/sample-01.png,Ketqua,previous artifact records user-confirmed text "Ket qua"; per-region labels confirmed in prior diagnostic artifacts,previously_used_comparison,yes,no,yes

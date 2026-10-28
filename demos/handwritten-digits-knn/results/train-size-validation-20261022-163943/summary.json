@@ -1,0 +1,145 @@
+{
+  "experiment": "nested train caps with a single fixed stratified validation set",
+  "timestamp_local": "20261022-163943",
+  "data_files_read": [
+    "D:\\Computer-Vision-Project\\demos\\handwritten-digits-knn\\data\\EMNIST\\gzip\\emnist-byclass-train-images-idx3-ubyte.gz",
+    "D:\\Computer-Vision-Project\\demos\\handwritten-digits-knn\\data\\EMNIST\\gzip\\emnist-byclass-train-labels-idx1-ubyte.gz",
+    "D:\\Computer-Vision-Project\\demos\\handwritten-digits-knn\\data\\EMNIST\\gzip\\emnist-byclass-mapping.txt"
+  ],
+  "test_idx_opened": false,
+  "class_count": 62,
+  "train_source_samples_available": 697932,
+  "reservoir_samples_per_class": 510,
+  "per_class_reservoir_min": 510,
+  "per_class_reservoir_max": 510,
+  "fixed_validation_per_class": 10,
+  "validation_samples": 620,
+  "validation_split_seed": 42,
+  "training_subset_sampling": "First n examples from one deterministically shuffled 500/class train pool; train sets are nested and disjoint from fixed validation.",
+  "preprocessing": "dataset_images_to_vectors shared glyph pipeline, identical for all caps and validation",
+  "metric": "evaluation.macro_f1",
+  "k_candidates": [
+    1,
+    3,
+    5,
+    7,
+    9
+  ],
+  "load_seconds": 3.1284742999996524,
+  "preprocessing_seconds_shared": 2.7850331000008737,
+  "experiments": [
+    {
+      "train_cap_per_class": 200,
+      "train_samples": 12400,
+      "validation_samples": 620,
+      "validation_macro_f1_by_k": {
+        "1": 0.5605747590173847,
+        "3": 0.5610252257450399,
+        "5": 0.566741692933191,
+        "7": 0.5684276144564718,
+        "9": 0.5628294997982014
+      },
+      "selected_k": 7,
+      "selected_validation_macro_f1": 0.5684276144564718,
+      "validation_scoring_seconds": 16.50404350000099
+    },
+    {
+      "train_cap_per_class": 300,
+      "train_samples": 18600,
+      "validation_samples": 620,
+      "validation_macro_f1_by_k": {
+        "1": 0.5654904980473588,
+        "3": 0.5896903824749591,
+        "5": 0.5880095061859744,
+        "7": 0.58982113001234,
+        "9": 0.5984094791099273
+      },
+      "selected_k": 9,
+      "selected_validation_macro_f1": 0.5984094791099273,
+      "validation_scoring_seconds": 23.410985299997265
+    },
+    {
+      "train_cap_per_class": 500,
+      "train_samples": 31000,
+      "validation_samples": 620,
+      "validation_macro_f1_by_k": {
+        "1": 0.5993859615600918,
+        "3": 0.5979197714855162,
+        "5": 0.6057638033270364,
+        "7": 0.6105524026925346,
+        "9": 0.6147666370490287
+      },
+      "selected_k": 9,
+      "selected_validation_macro_f1": 0.6147666370490287,
+      "validation_scoring_seconds": 35.085149000002275
+    }
+  ],
+  "sample_predictions": [
+    {
+      "train_cap_per_class": 200,
+      "train_samples": 12400,
+      "selected_k": 7,
+      "image": "data\\my_samples\\sample-01.png",
+      "prediction": "Ke1 iJC",
+      "regions": 6,
+      "seconds": 0.24217589999898337,
+      "ground_truth": "Ket qua (user-confirmed)"
+    },
+    {
+      "train_cap_per_class": 200,
+      "train_samples": 12400,
+      "selected_k": 7,
+      "image": "data\\my_samples\\sample-02.png",
+      "prediction": "h Cji0il mILiLI I",
+      "regions": 14,
+      "seconds": 0.44368519999989076,
+      "ground_truth": null
+    },
+    {
+      "train_cap_per_class": 300,
+      "train_samples": 18600,
+      "selected_k": 9,
+      "image": "data\\my_samples\\sample-01.png",
+      "prediction": "Ke1 iIU",
+      "regions": 6,
+      "seconds": 0.15324089999921853,
+      "ground_truth": "Ket qua (user-confirmed)"
+    },
+    {
+      "train_cap_per_class": 300,
+      "train_samples": 18600,
+      "selected_k": 9,
+      "image": "data\\my_samples\\sample-02.png",
+      "prediction": "I Cji0jI mIbiLI i",
+      "regions": 14,
+      "seconds": 0.3372866999998223,
+      "ground_truth": null
+    },
+    {
+      "train_cap_per_class": 500,
+      "train_samples": 31000,
+      "selected_k": 9,
+      "image": "data\\my_samples\\sample-01.png",
+      "prediction": "kcl iI0",
+      "regions": 6,
+      "seconds": 0.4618999999984226,
+      "ground_truth": "Ket qua (user-confirmed)"
+    },
+    {
+      "train_cap_per_class": 500,
+      "train_samples": 31000,
+      "selected_k": 9,
+      "image": "data\\my_samples\\sample-02.png",
+      "prediction": "I Cji0jI m1L1LI i",
+      "regions": 14,
+      "seconds": 1.0565988999987894,
+      "ground_truth": null
+    }
+  ],
+  "total_elapsed_seconds": 83.9452867,
+  "limitations": [
+    "Validation is a fixed stratified 620-sample holdout from EMNIST official train, not the official test set.",
+    "This fixed validation protocol differs from earlier baseline procedure that first capped train at 200/class and then split 10/class; do not treat scores as an exact re-run of historical 0.5887 unless the split is confirmed identical.",
+    "Prediction on two handwriting samples is qualitative; sample-02 ground truth is unknown."
+  ]
+}

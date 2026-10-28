@@ -1,0 +1,60 @@
+{
+  "dataset_split_access": {
+    "train_read": true,
+    "validation_used_for_k_selection": true,
+    "official_test_read_or_evaluated": false,
+    "random_state": 42,
+    "classes": 62
+  },
+  "experiments": [
+    {
+      "max_train_per_class": 200,
+      "training_samples": 12400,
+      "selected_k": 3,
+      "validation_macro_f1": 0.5886955255711545,
+      "validation_macro_f1_by_k": {
+        "1": 0.5687744975819311,
+        "3": 0.5886955255711545,
+        "5": 0.5697136299213047,
+        "7": 0.5756614491016345,
+        "9": 0.5606644063611419
+      },
+      "sample_01_prediction": "kcl il0",
+      "sample_02_prediction": "l c7lojl mtLiL1 I",
+      "fit_seconds": null
+    },
+    {
+      "max_train_per_class": 300,
+      "training_samples": 18600,
+      "selected_k": 5,
+      "validation_macro_f1": 0.5746281671294087,
+      "validation_macro_f1_by_k": {
+        "1": 0.5307870024615234,
+        "3": 0.5505999292054942,
+        "5": 0.5746281671294087,
+        "7": 0.5740062213981553,
+        "9": 0.5731979248797725
+      },
+      "sample_01_prediction": "kcl jlo",
+      "sample_02_prediction": "l jjFOjl mflILi l",
+      "fit_seconds": 31.47
+    },
+    {
+      "max_train_per_class": 500,
+      "training_samples": 31000,
+      "selected_k": 9,
+      "validation_macro_f1": 0.5914354759860289,
+      "validation_macro_f1_by_k": {
+        "1": 0.5653126997524172,
+        "3": 0.5812491433199077,
+        "5": 0.5851383321658484,
+        "7": 0.5785299735439445,
+        "9": 0.5914354759860289
+      },
+      "sample_01_prediction": "kcl iw0",
+      "sample_02_prediction": "I Cji0jl m1LlL1 i",
+      "fit_seconds": 55.06
+    }
+  ],
+  "interpretation": "Increasing the cap from 200 to 300 lowered validation macro-F1. A cap of 500 increased validation macro-F1 by about 0.00274 over the 200-cap baseline, but did not recover the confirmed sample-01 text and materially increased fit time. This is a validation-only experiment, not evidence of improved test accuracy or overall accuracy. No default or algorithm change was adopted."
+}

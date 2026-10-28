@@ -1,0 +1,236 @@
+{
+  "image": "data\\my_samples\\sample-01.png",
+  "ground_truth": "Ket qua (confirmed by user)",
+  "prediction": "kcl il0",
+  "region_count": 6,
+  "train_count": 12400,
+  "validation_count": 620,
+  "validation_macro_f1_by_k": {
+    "1": 0.5687744975819311,
+    "3": 0.5886955255711545,
+    "5": 0.5697136299213047,
+    "7": 0.5756614491016345,
+    "9": 0.5606644063611419
+  },
+  "selected_k": 3,
+  "official_test_idx_read": false,
+  "mapping_pairs": {
+    "0": "0",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "10": "A",
+    "11": "B",
+    "12": "C",
+    "36": "a",
+    "37": "b",
+    "38": "c"
+  },
+  "diagnostic_csv": "sample-01/regions_and_neighbors.csv",
+  "debug_segmentation_dir": "sample-01/segmentation",
+  "normalized_crop_count": 6,
+  "normalized_shape": [
+    28,
+    28
+  ],
+  "regions": [
+    {
+      "region": 1,
+      "box_xyxy": [
+        154,
+        111,
+        186,
+        172
+      ],
+      "crop_size_wh": [
+        46,
+        75
+      ],
+      "prediction": "k",
+      "nearest_5_labels": [
+        "k",
+        "k",
+        "k",
+        "K",
+        "K"
+      ],
+      "nearest_5_euclidean_distances": [
+        4.089511784777463,
+        4.45488302620357,
+        4.605718399108056,
+        4.650375306231963,
+        4.688590850061533
+      ],
+      "normalized_image": "crop_01_normalized_28x28.png",
+      "expected_character_user_confirmed": "K",
+      "nearest_rank_of_expected_class": 4,
+      "nearest_expected_class_distance": 4.650375306231963
+    },
+    {
+      "region": 2,
+      "box_xyxy": [
+        195,
+        122,
+        228,
+        168
+      ],
+      "crop_size_wh": [
+        45,
+        58
+      ],
+      "prediction": "c",
+      "nearest_5_labels": [
+        "c",
+        "c",
+        "c",
+        "c",
+        "C"
+      ],
+      "nearest_5_euclidean_distances": [
+        5.2533010162693765,
+        5.654646445057094,
+        6.2175367900149405,
+        6.2713841014105345,
+        6.285978605056467
+      ],
+      "normalized_image": "crop_02_normalized_28x28.png",
+      "expected_character_user_confirmed": "e",
+      "nearest_rank_of_expected_class": 13,
+      "nearest_expected_class_distance": 6.609897937951708
+    },
+    {
+      "region": 3,
+      "box_xyxy": [
+        228,
+        122,
+        247,
+        168
+      ],
+      "crop_size_wh": [
+        31,
+        58
+      ],
+      "prediction": "l",
+      "nearest_5_labels": [
+        "l",
+        "l",
+        "l",
+        "i",
+        "i"
+      ],
+      "nearest_5_euclidean_distances": [
+        3.713530936474805,
+        3.9143365485620865,
+        3.9935589127455695,
+        4.018785241116709,
+        4.057881959283159
+      ],
+      "normalized_image": "crop_03_normalized_28x28.png",
+      "expected_character_user_confirmed": "t",
+      "nearest_rank_of_expected_class": 21,
+      "nearest_expected_class_distance": 4.246912241969407
+    },
+    {
+      "region": 4,
+      "box_xyxy": [
+        298,
+        139,
+        327,
+        220
+      ],
+      "crop_size_wh": [
+        49,
+        101
+      ],
+      "prediction": "i",
+      "nearest_5_labels": [
+        "i",
+        "I",
+        "t",
+        "J",
+        "1"
+      ],
+      "nearest_5_euclidean_distances": [
+        3.0748550092366718,
+        4.015996585648541,
+        4.138143319923685,
+        4.156565008221658,
+        4.179238802360383
+      ],
+      "normalized_image": "crop_04_normalized_28x28.png",
+      "expected_character_user_confirmed": "q",
+      "nearest_rank_of_expected_class": 56,
+      "nearest_expected_class_distance": 4.685979258351218
+    },
+    {
+      "region": 5,
+      "box_xyxy": [
+        328,
+        142,
+        370,
+        174
+      ],
+      "crop_size_wh": [
+        52,
+        42
+      ],
+      "prediction": "l",
+      "nearest_5_labels": [
+        "l",
+        "I",
+        "J",
+        "T",
+        "Z"
+      ],
+      "nearest_5_euclidean_distances": [
+        5.1056189359629975,
+        5.1416925939891955,
+        5.239236393030469,
+        5.240300336685018,
+        5.255639530239403
+      ],
+      "normalized_image": "crop_05_normalized_28x28.png",
+      "expected_character_user_confirmed": "u",
+      "nearest_rank_of_expected_class": 40,
+      "nearest_expected_class_distance": 5.6698628626817555
+    },
+    {
+      "region": 6,
+      "box_xyxy": [
+        376,
+        136,
+        403,
+        170
+      ],
+      "crop_size_wh": [
+        35,
+        42
+      ],
+      "prediction": "0",
+      "nearest_5_labels": [
+        "0",
+        "U",
+        "C",
+        "0",
+        "7"
+      ],
+      "nearest_5_euclidean_distances": [
+        4.811646461339286,
+        5.052120618068083,
+        5.0759416462675535,
+        5.130059449601089,
+        5.142870841474683
+      ],
+      "normalized_image": "crop_06_normalized_28x28.png",
+      "expected_character_user_confirmed": "a",
+      "nearest_rank_of_expected_class": 84,
+      "nearest_expected_class_distance": 5.948042449189759
+    }
+  ]
+}

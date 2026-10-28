@@ -1,0 +1,63 @@
+{
+  "query_image": "D:\\Computer-Vision-Project\\demos\\handwritten-digits-knn\\results\\preprocessing-comparison\\crops\\crop_01_shared.png",
+  "query_shape": [
+    28,
+    28
+  ],
+  "query_vector_length": 784,
+  "query_vector_range": [
+    0.0,
+    1.0
+  ],
+  "train_subset_count": 12400,
+  "train_cap_per_class": 200,
+  "random_state": 42,
+  "test_idx_opened": false,
+  "top_neighbors": [
+    {
+      "rank": 1,
+      "sample_id": 636858,
+      "class_id": 46,
+      "character": "k",
+      "euclidean_distance": 4.089511784777463,
+      "image_file": "neighbor_01_id-636858_k.png",
+      "image_path": "D:\\Computer-Vision-Project\\demos\\handwritten-digits-knn\\results\\nearest-neighbors-crop01\\neighbor_01_id-636858_k.png"
+    },
+    {
+      "rank": 2,
+      "sample_id": 18834,
+      "class_id": 46,
+      "character": "k",
+      "euclidean_distance": 4.45488302620357,
+      "image_file": "neighbor_02_id-18834_k.png",
+      "image_path": "D:\\Computer-Vision-Project\\demos\\handwritten-digits-knn\\results\\nearest-neighbors-crop01\\neighbor_02_id-18834_k.png"
+    },
+    {
+      "rank": 3,
+      "sample_id": 501314,
+      "class_id": 46,
+      "character": "k",
+      "euclidean_distance": 4.605718399108056,
+      "image_file": "neighbor_03_id-501314_k.png",
+      "image_path": "D:\\Computer-Vision-Project\\demos\\handwritten-digits-knn\\results\\nearest-neighbors-crop01\\neighbor_03_id-501314_k.png"
+    },
+    {
+      "rank": 4,
+      "sample_id": 111425,
+      "class_id": 20,
+      "character": "K",
+      "euclidean_distance": 4.650375306231963,
+      "image_file": "neighbor_04_id-111425_K.png",
+      "image_path": "D:\\Computer-Vision-Project\\demos\\handwritten-digits-knn\\results\\nearest-neighbors-crop01\\neighbor_04_id-111425_K.png"
+    },
+    {
+      "rank": 5,
+      "sample_id": 458218,
+      "class_id": 20,
+      "character": "K",
+      "euclidean_distance": 4.688590850061533,
+      "image_file": "neighbor_05_id-458218_K.png",
+      "image_path": "D:\\Computer-Vision-Project\\demos\\handwritten-digits-knn\\results\\nearest-neighbors-crop01\\neighbor_05_id-458218_K.png"
+    }
+  ]
+}

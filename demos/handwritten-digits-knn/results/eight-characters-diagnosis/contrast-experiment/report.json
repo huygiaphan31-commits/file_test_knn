@@ -1,0 +1,638 @@
+{
+  "image": "data\\my_samples\\eight-characters.png",
+  "image_size_wh": [
+    552,
+    173
+  ],
+  "expected": "aAbBcCdD",
+  "boxes_xyxy_left_to_right": [
+    [
+      62,
+      91,
+      95,
+      122
+    ],
+    [
+      114,
+      61,
+      148,
+      125
+    ],
+    [
+      170,
+      65,
+      197,
+      115
+    ],
+    [
+      207,
+      63,
+      244,
+      113
+    ],
+    [
+      277,
+      83,
+      302,
+      111
+    ],
+    [
+      324,
+      49,
+      360,
+      104
+    ],
+    [
+      388,
+      42,
+      415,
+      97
+    ],
+    [
+      438,
+      37,
+      478,
+      86
+    ]
+  ],
+  "model": {
+    "training_count": 31000,
+    "max_train_per_class": 500,
+    "k": 9,
+    "validation_macro_f1": 0.5914354759860289,
+    "test_idx_read": false
+  },
+  "contrast_method": "After existing 28x28 normalization, divide each glyph vector by its own maximum intensity; no geometry, polarity, or model change.",
+  "predictions": {
+    "current": "iiiiiiji",
+    "peak_normalized": "QlbBcCjD"
+  },
+  "characters_correct": {
+    "current": 0,
+    "peak_normalized": 5,
+    "total": 8
+  },
+  "regions": [
+    {
+      "region": 1,
+      "expected": "a",
+      "box_xyxy": [
+        62,
+        91,
+        95,
+        122
+      ],
+      "crop_size_wh": [
+        41,
+        39
+      ],
+      "input_peak": 0.32156863808631897,
+      "contrast_gain": 3.1097559947110547,
+      "current_prediction": "i",
+      "current_neighbors": [
+        "i",
+        "j",
+        "i",
+        "j",
+        "J",
+        "i",
+        "l",
+        "j",
+        "d"
+      ],
+      "current_distances": [
+        3.635376734386364,
+        3.9400780085163216,
+        4.031494718604662,
+        4.058452267924116,
+        4.079947047383043,
+        4.091004486873652,
+        4.1266140817595796,
+        4.186579083842364,
+        4.25716951213012
+      ],
+      "current_expected_class_rank": 250,
+      "peak_normalized_prediction": "Q",
+      "peak_normalized_neighbors": [
+        "Q",
+        "Q",
+        "a",
+        "Q",
+        "Q",
+        "Q",
+        "a",
+        "j",
+        "C"
+      ],
+      "peak_normalized_distances": [
+        5.26603968053495,
+        5.278514781153609,
+        5.483707698638498,
+        5.998413939922183,
+        6.026872916536968,
+        6.05242643380027,
+        6.089176852532562,
+        6.319327594148417,
+        6.3393861317685785
+      ],
+      "peak_normalized_expected_class_rank": 3,
+      "current_nonzero_pixels": 258,
+      "contrast_nonzero_pixels": 258,
+      "current_pixels_at_least_10pct_peak": 174,
+      "contrast_pixels_at_least_10pct_peak": 174,
+      "current_file": "region_01/current_28x28.png",
+      "peak_normalized_file": "region_01/peak_normalized_28x28.png"
+    },
+    {
+      "region": 2,
+      "expected": "A",
+      "box_xyxy": [
+        114,
+        61,
+        148,
+        125
+      ],
+      "crop_size_wh": [
+        50,
+        80
+      ],
+      "input_peak": 0.34117648005485535,
+      "contrast_gain": 2.931034401431239,
+      "current_prediction": "i",
+      "current_neighbors": [
+        "I",
+        "l",
+        "i",
+        "j",
+        "t",
+        "i",
+        "i",
+        "j",
+        "I"
+      ],
+      "current_distances": [
+        2.879625309951596,
+        3.3505576673603144,
+        3.522022851083371,
+        3.522138572843807,
+        3.5681297852820806,
+        3.6137016110409848,
+        3.7350939864772954,
+        3.741330706568619,
+        3.778424854349575
+      ],
+      "current_expected_class_rank": 281,
+      "peak_normalized_prediction": "l",
+      "peak_normalized_neighbors": [
+        "I",
+        "h",
+        "l",
+        "l",
+        "h",
+        "l",
+        "H",
+        "g",
+        "l"
+      ],
+      "peak_normalized_distances": [
+        4.0330165469786765,
+        4.282103513349017,
+        4.328183029973116,
+        4.482110628147948,
+        4.533796018202744,
+        4.555344887509712,
+        4.575106574108753,
+        4.652670761135861,
+        4.661364683873547
+      ],
+      "peak_normalized_expected_class_rank": 118,
+      "current_nonzero_pixels": 155,
+      "contrast_nonzero_pixels": 155,
+      "current_pixels_at_least_10pct_peak": 85,
+      "contrast_pixels_at_least_10pct_peak": 85,
+      "current_file": "region_02/current_28x28.png",
+      "peak_normalized_file": "region_02/peak_normalized_28x28.png"
+    },
+    {
+      "region": 3,
+      "expected": "b",
+      "box_xyxy": [
+        170,
+        65,
+        197,
+        115
+      ],
+      "crop_size_wh": [
+        39,
+        62
+      ],
+      "input_peak": 0.32549020648002625,
+      "contrast_gain": 3.0722890584462643,
+      "current_prediction": "i",
+      "current_neighbors": [
+        "j",
+        "i",
+        "i",
+        "j",
+        "l",
+        "j",
+        "i",
+        "I",
+        "i"
+      ],
+      "current_distances": [
+        3.5034404922850726,
+        3.6600885595681585,
+        3.678943549099335,
+        3.708987304878114,
+        3.781344046132311,
+        3.7859065264713614,
+        3.7976581667291214,
+        3.821195979288144,
+        3.844549636115487
+      ],
+      "current_expected_class_rank": 24,
+      "peak_normalized_prediction": "b",
+      "peak_normalized_neighbors": [
+        "b",
+        "b",
+        "b",
+        "b",
+        "h",
+        "b",
+        "b",
+        "b",
+        "h"
+      ],
+      "peak_normalized_distances": [
+        3.806454461031981,
+        3.831491705652445,
+        3.842670319675145,
+        4.123371159569968,
+        4.17320364376909,
+        4.207109715530836,
+        4.2158560535031375,
+        4.274927519706816,
+        4.3622369200854365
+      ],
+      "peak_normalized_expected_class_rank": 1,
+      "current_nonzero_pixels": 153,
+      "contrast_nonzero_pixels": 153,
+      "current_pixels_at_least_10pct_peak": 81,
+      "contrast_pixels_at_least_10pct_peak": 81,
+      "current_file": "region_03/current_28x28.png",
+      "peak_normalized_file": "region_03/peak_normalized_28x28.png"
+    },
+    {
+      "region": 4,
+      "expected": "B",
+      "box_xyxy": [
+        207,
+        63,
+        244,
+        113
+      ],
+      "crop_size_wh": [
+        49,
+        62
+      ],
+      "input_peak": 0.3176470696926117,
+      "contrast_gain": 3.1481480404264515,
+      "current_prediction": "i",
+      "current_neighbors": [
+        "i",
+        "j",
+        "l",
+        "j",
+        "i",
+        "J",
+        "j",
+        "i",
+        "F"
+      ],
+      "current_distances": [
+        3.544766261587758,
+        3.7954566238068566,
+        3.8706658257772943,
+        3.9429691773660256,
+        3.954252147268924,
+        3.9605766888618823,
+        3.963551805934063,
+        4.006597874050567,
+        4.048352620128958
+      ],
+      "current_expected_class_rank": 1122,
+      "peak_normalized_prediction": "B",
+      "peak_normalized_neighbors": [
+        "B",
+        "C",
+        "b",
+        "3",
+        "B",
+        "L",
+        "b",
+        "B",
+        "3"
+      ],
+      "peak_normalized_distances": [
+        5.194011486715807,
+        5.308644924520075,
+        5.3296131399255815,
+        5.588577503223652,
+        5.60369286622914,
+        5.685476242327554,
+        5.694728451329523,
+        5.7036914148526074,
+        5.726508710404936
+      ],
+      "peak_normalized_expected_class_rank": 1,
+      "current_nonzero_pixels": 204,
+      "contrast_nonzero_pixels": 204,
+      "current_pixels_at_least_10pct_peak": 135,
+      "contrast_pixels_at_least_10pct_peak": 135,
+      "current_file": "region_04/current_28x28.png",
+      "peak_normalized_file": "region_04/peak_normalized_28x28.png"
+    },
+    {
+      "region": 5,
+      "expected": "c",
+      "box_xyxy": [
+        277,
+        83,
+        302,
+        111
+      ],
+      "crop_size_wh": [
+        31,
+        34
+      ],
+      "input_peak": 0.30980393290519714,
+      "contrast_gain": 3.2278479831500695,
+      "current_prediction": "i",
+      "current_neighbors": [
+        "i",
+        "j",
+        "J",
+        "l",
+        "i",
+        "i",
+        "j",
+        "j",
+        "i"
+      ],
+      "current_distances": [
+        3.355075667331188,
+        3.689147917961886,
+        3.6961736809009933,
+        3.784195977811157,
+        3.8066576840253292,
+        3.8358214578874654,
+        3.8620643410187814,
+        3.9133050975490904,
+        4.025281582289364
+      ],
+      "current_expected_class_rank": 129,
+      "peak_normalized_prediction": "c",
+      "peak_normalized_neighbors": [
+        "c",
+        "c",
+        "C",
+        "c",
+        "c",
+        "c",
+        "c",
+        "c",
+        "c"
+      ],
+      "peak_normalized_distances": [
+        3.207938036935875,
+        3.919799766176988,
+        4.00665336395422,
+        4.045360430499017,
+        4.321059894077017,
+        4.358157193098636,
+        4.368196143097601,
+        4.384335641952627,
+        4.494735533848375
+      ],
+      "peak_normalized_expected_class_rank": 1,
+      "current_nonzero_pixels": 240,
+      "contrast_nonzero_pixels": 240,
+      "current_pixels_at_least_10pct_peak": 141,
+      "contrast_pixels_at_least_10pct_peak": 141,
+      "current_file": "region_05/current_28x28.png",
+      "peak_normalized_file": "region_05/peak_normalized_28x28.png"
+    },
+    {
+      "region": 6,
+      "expected": "C",
+      "box_xyxy": [
+        324,
+        49,
+        360,
+        104
+      ],
+      "crop_size_wh": [
+        50,
+        69
+      ],
+      "input_peak": 0.2862745225429535,
+      "contrast_gain": 3.4931505294885508,
+      "current_prediction": "i",
+      "current_neighbors": [
+        "i",
+        "j",
+        "j",
+        "l",
+        "i",
+        "i",
+        "J",
+        "J",
+        "i"
+      ],
+      "current_distances": [
+        3.357669037328412,
+        3.4253550470614544,
+        3.6133867321324895,
+        3.660491918935767,
+        3.735120743081735,
+        3.7404303916771293,
+        3.8407276370322947,
+        3.8659229447699492,
+        3.8721097586933864
+      ],
+      "current_expected_class_rank": 142,
+      "peak_normalized_prediction": "C",
+      "peak_normalized_neighbors": [
+        "c",
+        "C",
+        "C",
+        "C",
+        "0",
+        "C",
+        "C",
+        "L",
+        "C"
+      ],
+      "peak_normalized_distances": [
+        3.8506238775127053,
+        3.9152697331339494,
+        4.157988356647708,
+        4.261001719145358,
+        4.269367459380383,
+        4.300149819868049,
+        4.387699877494205,
+        4.4588502267586865,
+        4.504186282855469
+      ],
+      "peak_normalized_expected_class_rank": 2,
+      "current_nonzero_pixels": 128,
+      "contrast_nonzero_pixels": 128,
+      "current_pixels_at_least_10pct_peak": 81,
+      "contrast_pixels_at_least_10pct_peak": 81,
+      "current_file": "region_06/current_28x28.png",
+      "peak_normalized_file": "region_06/peak_normalized_28x28.png"
+    },
+    {
+      "region": 7,
+      "expected": "d",
+      "box_xyxy": [
+        388,
+        42,
+        415,
+        97
+      ],
+      "crop_size_wh": [
+        41,
+        69
+      ],
+      "input_peak": 0.3019607961177826,
+      "contrast_gain": 3.311688182229924,
+      "current_prediction": "j",
+      "current_neighbors": [
+        "j",
+        "j",
+        "j",
+        "i",
+        "l",
+        "i",
+        "J",
+        "l",
+        "J"
+      ],
+      "current_distances": [
+        3.0651042460096254,
+        3.174797520425557,
+        3.224826902095159,
+        3.464929548824279,
+        3.4924602651198544,
+        3.5716794439668336,
+        3.588822502393572,
+        3.618058941758635,
+        3.6685368910098872
+      ],
+      "current_expected_class_rank": 31,
+      "peak_normalized_prediction": "j",
+      "peak_normalized_neighbors": [
+        "j",
+        "j",
+        "d",
+        "j",
+        "d",
+        "J",
+        "j",
+        "j",
+        "J"
+      ],
+      "peak_normalized_distances": [
+        3.5124463035329363,
+        3.5230673066916505,
+        3.608237384644182,
+        3.8151976703729367,
+        4.043904858923204,
+        4.1172489348374475,
+        4.119949405815131,
+        4.17401299994368,
+        4.1916337488830875
+      ],
+      "peak_normalized_expected_class_rank": 3,
+      "current_nonzero_pixels": 108,
+      "contrast_nonzero_pixels": 108,
+      "current_pixels_at_least_10pct_peak": 84,
+      "contrast_pixels_at_least_10pct_peak": 84,
+      "current_file": "region_07/current_28x28.png",
+      "peak_normalized_file": "region_07/peak_normalized_28x28.png"
+    },
+    {
+      "region": 8,
+      "expected": "D",
+      "box_xyxy": [
+        438,
+        37,
+        478,
+        86
+      ],
+      "crop_size_wh": [
+        52,
+        61
+      ],
+      "input_peak": 0.27450981736183167,
+      "contrast_gain": 3.642856964499375,
+      "current_prediction": "i",
+      "current_neighbors": [
+        "i",
+        "j",
+        "j",
+        "i",
+        "l",
+        "i",
+        "J",
+        "j",
+        "i"
+      ],
+      "current_distances": [
+        3.479180759869954,
+        3.5660064658234143,
+        3.7236260476988523,
+        3.8260766426508166,
+        3.838230266850026,
+        3.886559502478651,
+        3.912585889966592,
+        4.004515040478076,
+        4.059501767459169
+      ],
+      "current_expected_class_rank": 217,
+      "peak_normalized_prediction": "D",
+      "peak_normalized_neighbors": [
+        "D",
+        "D",
+        "D",
+        "0",
+        "u",
+        "0",
+        "D",
+        "O",
+        "D"
+      ],
+      "peak_normalized_distances": [
+        4.642763722690278,
+        4.65096631706954,
+        4.911318380665249,
+        4.958355737891466,
+        5.022431350170995,
+        5.084735312059499,
+        5.143377350631488,
+        5.207325090679136,
+        5.272438835407418
+      ],
+      "peak_normalized_expected_class_rank": 1,
+      "current_nonzero_pixels": 208,
+      "contrast_nonzero_pixels": 208,
+      "current_pixels_at_least_10pct_peak": 138,
+      "contrast_pixels_at_least_10pct_peak": 138,
+      "current_file": "region_08/current_28x28.png",
+      "peak_normalized_file": "region_08/peak_normalized_28x28.png"
+    }
+  ],
+  "interpretation_limit": "This is one image and cannot establish generalization improvement."
+}

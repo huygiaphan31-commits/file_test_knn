@@ -1,0 +1,3 @@
+k,validation_macro_f1,train_samples,validation_samples,paired_scoring_seconds
+9,0.591435475986,30380,620,37.511337
+1000,0.398248683684,30380,620,37.511337

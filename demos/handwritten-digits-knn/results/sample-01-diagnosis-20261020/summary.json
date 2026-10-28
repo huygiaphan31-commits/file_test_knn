@@ -1,0 +1,26 @@
+{
+  "source_image": "data\\my_samples\\sample-01.png",
+  "ground_truth_confirmed_by_user": "Ket qua",
+  "regions_count": 6,
+  "line_prediction": "kcl il0",
+  "selected_k": 3,
+  "training_samples_loaded": 12400,
+  "validation_samples": 620,
+  "selected_k_validation_macro_f1": 0.5886955255711545,
+  "validation_k_scores_shared_pipeline": {
+    "1": 0.5687744975819311,
+    "3": 0.5886955255711545,
+    "5": 0.5697136299213047,
+    "7": 0.5756614491016345,
+    "9": 0.5606644063611419
+  },
+  "validation_k_scores_legacy_pipeline": {
+    "1": 0.5243716383071011,
+    "3": 0.5492797489714215,
+    "5": 0.5648943906029567,
+    "7": 0.5589590184237293,
+    "9": 0.552914158908182
+  },
+  "test_idx_read": false,
+  "evidence_note": "Per-crop predictions and nearest neighbors are diagnostic, not a global accuracy estimate."
+}

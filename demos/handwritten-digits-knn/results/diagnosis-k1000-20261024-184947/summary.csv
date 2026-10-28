@@ -1,0 +1,8 @@
+﻿image,ground_truth,ground_truth_status,regions,expected_char_count,alignment_available,prediction,region_predictions,correct_regions,scored_regions,accuracy_on_this_image,debug_dir,alignment_note
+aB3k9C5dA7.png,aB3K9C5dA7,confirmed,10,10,True,jl jk jjj j1j,jljkjjjj1j,0,10,0.000000,results\diagnosis-k1000-20261024-184947\aB3k9C5dA7,
+eight-characters.png,aAbBcCdD,confirmed,9,8,False,jlh3cj0l0,jlh3cj0l0,,0,,results\diagnosis-k1000-20261024-184947\eight-characters,Ground truth has 8 characters but segmentation returned 9 regions; per-region truth alignment is unsafe.
+sample-01.png,Ketqua,confirmed,6,6,True,Lcl ll0,Lclll0,0,6,0.000000,results\diagnosis-k1000-20261024-184947\sample-01,
+sample-02.png,,unknown_not_scored,16,,False,l jjhIi0ji mIblLl I,ljjhIi0jimIblLlI,,0,,results\diagnosis-k1000-20261024-184947\sample-02,
+test_aAbB.png,aAbB,confirmed,4,4,True,uhh3,uhh3,0,4,0.000000,results\diagnosis-k1000-20261024-184947\test_aAbB,
+test_cCdD.png,cCdD,confirmed,4,4,True,CjjL,CjjL,0,4,0.000000,results\diagnosis-k1000-20261024-184947\test_cCdD,
+test_abcD.png,abcD,confirmed,4,4,True,cbc D,cbcD,3,4,0.750000,results\diagnosis-k1000-20261024-184947\test_abcD,

@@ -1,0 +1,15 @@
+{
+  "image": "test_aAbB.png",
+  "ground_truth": "aAbB",
+  "ground_truth_status": "confirmed",
+  "regions": 4,
+  "expected_char_count": 4,
+  "alignment_available": "True",
+  "prediction": "uhh3",
+  "region_predictions": "uhh3",
+  "correct_regions": 0,
+  "scored_regions": 4,
+  "accuracy_on_this_image": "0.000000",
+  "debug_dir": "results\\diagnosis-k1000-20261024-184947\\test_aAbB",
+  "alignment_note": ""
+}

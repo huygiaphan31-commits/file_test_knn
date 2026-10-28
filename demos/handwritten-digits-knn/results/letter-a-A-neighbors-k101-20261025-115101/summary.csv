@@ -1,0 +1,5 @@
+﻿image,confirmed_ground_truth,regions,ground_truth_characters,alignment_valid,region_predictions,correct_regions,scored_regions,note
+test_aAbB.png,aAbB,4,4,True,uhhL,0,4,
+test_abcD.png,abcD,4,4,True,cbCD,2,4,
+eight-characters.png,aAbBcCdD,9,8,False,QhbBcC0lD,,0,No positional scoring: region count differs from confirmed text.
+aB3k9C5dA7.png,aB3K9C5dA7,10,10,True,jBjk9Cgjhj,3,10,

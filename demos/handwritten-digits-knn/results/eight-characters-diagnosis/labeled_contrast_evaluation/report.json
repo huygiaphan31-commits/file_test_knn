@@ -1,0 +1,635 @@
+{
+  "model": {
+    "training_count": 31000,
+    "max_train_per_class": 500,
+    "k": 9,
+    "validation_macro_f1": 0.5914354759860289,
+    "test_idx_read": false
+  },
+  "contrast_method": "After current 28x28 glyph normalization, divide the input vector by that glyph's maximum intensity; train vectors are unchanged.",
+  "macro_f1_definition": "For these small labeled samples, macro-F1 averages per-class F1 over distinct characters present in ground truth; it is descriptive only, not a generalization estimate.",
+  "images": [
+    {
+      "image": "data/my_samples/eight-characters.png",
+      "evaluation_role": "pilot",
+      "ground_truth_source": "user-confirmed in conversation; used for initial contrast pilot",
+      "ground_truth_characters": "aAbBcCdD",
+      "regions": 8,
+      "current": {
+        "correct": 0,
+        "total": 8,
+        "accuracy": 0.0,
+        "macro_f1_over_ground_truth_classes": 0.0,
+        "macro_f1_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "per_class": {
+          "A": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "B": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "C": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "D": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "a": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "b": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "c": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "d": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "peak_normalized": {
+        "correct": 5,
+        "total": 8,
+        "accuracy": 0.625,
+        "macro_f1_over_ground_truth_classes": 0.625,
+        "macro_f1_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "per_class": {
+          "A": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "B": {
+            "support": 1,
+            "true_positive": 1,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "C": {
+            "support": 1,
+            "true_positive": 1,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "D": {
+            "support": 1,
+            "true_positive": 1,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "a": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "b": {
+            "support": 1,
+            "true_positive": 1,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "c": {
+            "support": 1,
+            "true_positive": 1,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "d": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "image": "data/my_samples/sample-01.png",
+      "evaluation_role": "previously_used_comparison",
+      "ground_truth_source": "previous artifact records user-confirmed text \"Ket qua\"; per-region labels confirmed in prior diagnostic artifacts",
+      "ground_truth_characters": "Ketqua",
+      "regions": 6,
+      "current": {
+        "correct": 0,
+        "total": 6,
+        "accuracy": 0.0,
+        "macro_f1_over_ground_truth_classes": 0.0,
+        "macro_f1_labels": [
+          "K",
+          "a",
+          "e",
+          "q",
+          "t",
+          "u"
+        ],
+        "per_class": {
+          "K": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "a": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "e": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "q": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "t": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "u": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "peak_normalized": {
+        "correct": 0,
+        "total": 6,
+        "accuracy": 0.0,
+        "macro_f1_over_ground_truth_classes": 0.0,
+        "macro_f1_labels": [
+          "K",
+          "a",
+          "e",
+          "q",
+          "t",
+          "u"
+        ],
+        "per_class": {
+          "K": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "a": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "e": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "q": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "t": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "u": {
+            "support": 1,
+            "true_positive": 0,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "pooled": {
+    "current": {
+      "correct": 0,
+      "total": 14,
+      "accuracy": 0.0,
+      "macro_f1_over_ground_truth_classes": 0.0,
+      "macro_f1_labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "K",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "q",
+        "t",
+        "u"
+      ],
+      "per_class": {
+        "A": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "B": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "C": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "D": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "K": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "a": {
+          "support": 2,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "b": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "c": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 1,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "d": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "e": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "q": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "t": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "u": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "peak_normalized": {
+      "correct": 5,
+      "total": 14,
+      "accuracy": 0.35714285714285715,
+      "macro_f1_over_ground_truth_classes": 0.358974358974359,
+      "macro_f1_labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "K",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "q",
+        "t",
+        "u"
+      ],
+      "per_class": {
+        "A": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "B": {
+          "support": 1,
+          "true_positive": 1,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "C": {
+          "support": 1,
+          "true_positive": 1,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "D": {
+          "support": 1,
+          "true_positive": 1,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "K": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "a": {
+          "support": 2,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "b": {
+          "support": 1,
+          "true_positive": 1,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "c": {
+          "support": 1,
+          "true_positive": 1,
+          "false_positive": 1,
+          "false_negative": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        "d": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "e": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "q": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "t": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "u": {
+          "support": 1,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    }
+  },
+  "limitations": [
+    "The eight-character image was used as the pilot for this contrast method.",
+    "sample-01.png has prior diagnostic/experiment results and is not a blind holdout.",
+    "sample-02.png has no confirmed ground truth and is excluded.",
+    "No generalization improvement can be claimed from these images."
+  ]
+}

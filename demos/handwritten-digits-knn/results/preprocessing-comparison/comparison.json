@@ -1,0 +1,919 @@
+{
+  "experiment": "paired legacy versus shared glyph preprocessing",
+  "test_set_read_or_evaluated": false,
+  "random_state": 42,
+  "training_subset_count": 12400,
+  "training_subset_per_class_cap": 200,
+  "train_indices_count": 11780,
+  "validation_indices_count": 620,
+  "validation_fraction": 0.2,
+  "max_validation_per_class": 10,
+  "class_mapping": {
+    "0": "0",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "10": "A",
+    "11": "B",
+    "12": "C",
+    "13": "D",
+    "14": "E",
+    "15": "F",
+    "16": "G",
+    "17": "H",
+    "18": "I",
+    "19": "J",
+    "20": "K",
+    "21": "L",
+    "22": "M",
+    "23": "N",
+    "24": "O",
+    "25": "P",
+    "26": "Q",
+    "27": "R",
+    "28": "S",
+    "29": "T",
+    "30": "U",
+    "31": "V",
+    "32": "W",
+    "33": "X",
+    "34": "Y",
+    "35": "Z",
+    "36": "a",
+    "37": "b",
+    "38": "c",
+    "39": "d",
+    "40": "e",
+    "41": "f",
+    "42": "g",
+    "43": "h",
+    "44": "i",
+    "45": "j",
+    "46": "k",
+    "47": "l",
+    "48": "m",
+    "49": "n",
+    "50": "o",
+    "51": "p",
+    "52": "q",
+    "53": "r",
+    "54": "s",
+    "55": "t",
+    "56": "u",
+    "57": "v",
+    "58": "w",
+    "59": "x",
+    "60": "y",
+    "61": "z"
+  },
+  "legacy_emnist": {
+    "preprocessing": "IDX transpose then grayscale vectorize / 255",
+    "selected_k": 5,
+    "validation_macro_f1_by_k": {
+      "1": 0.5243716383071011,
+      "3": 0.5492797489714215,
+      "5": 0.5648943906029567,
+      "7": 0.5589590184237293,
+      "9": 0.552914158908182
+    }
+  },
+  "shared_glyph_pipeline": {
+    "preprocessing": "IDX transpose; infer polarity; crop foreground; resize to fit 20x20; center on 28x28 black canvas; vectorize / 255",
+    "selected_k": 3,
+    "validation_macro_f1_by_k": {
+      "1": 0.5687744975819311,
+      "3": 0.5886955255711545,
+      "5": 0.5697136299213047,
+      "7": 0.5756614491016345,
+      "9": 0.5606644063611419
+    }
+  },
+  "crop_predictions": [
+    {
+      "crop": "crop_01.png",
+      "legacy_prediction": "k",
+      "shared_prediction": "k"
+    },
+    {
+      "crop": "crop_02.png",
+      "legacy_prediction": "c",
+      "shared_prediction": "c"
+    },
+    {
+      "crop": "crop_03.png",
+      "legacy_prediction": "1",
+      "shared_prediction": "l"
+    },
+    {
+      "crop": "crop_04.png",
+      "legacy_prediction": "1",
+      "shared_prediction": "i"
+    },
+    {
+      "crop": "crop_05.png",
+      "legacy_prediction": "w",
+      "shared_prediction": "l"
+    },
+    {
+      "crop": "crop_06.png",
+      "legacy_prediction": "Q",
+      "shared_prediction": "0"
+    }
+  ],
+  "crop_diagnostics": {
+    "crop_01.png": {
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          8,
+          4,
+          19,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.0,
+          13.5
+        ],
+        "foreground_pixels": 94,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          8,
+          4,
+          19,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.0,
+          13.5
+        ],
+        "foreground_pixels": 94,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    },
+    "crop_02.png": {
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          4,
+          5,
+          24,
+          22
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.0
+        ],
+        "foreground_pixels": 157,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 0.9176470637321472
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          4,
+          5,
+          24,
+          22
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.0
+        ],
+        "foreground_pixels": 157,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 0.9176470637321472
+      }
+    },
+    "crop_03.png": {
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          8,
+          4,
+          20,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 83,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 0.8784313797950745
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          8,
+          4,
+          20,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 83,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 0.8784313797950745
+      }
+    },
+    "crop_04.png": {
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          9,
+          4,
+          19,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 70,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 0.7215686440467834
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          9,
+          4,
+          19,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 70,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 0.7215686440467834
+      }
+    },
+    "crop_05.png": {
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          4,
+          7,
+          24,
+          20
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.0
+        ],
+        "foreground_pixels": 103,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 0.8078431487083435
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          4,
+          7,
+          24,
+          20
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.0
+        ],
+        "foreground_pixels": 103,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 0.8078431487083435
+      }
+    },
+    "crop_06.png": {
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          6,
+          4,
+          22,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 142,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 0.7372549176216125
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          6,
+          4,
+          22,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 142,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 0.7372549176216125
+      }
+    }
+  },
+  "labeled_train_sample_diagnostics": {
+    "sample_01_0": {
+      "class_id": 0,
+      "character": "0",
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          2,
+          4,
+          26,
+          25
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          14.0
+        ],
+        "foreground_pixels": 225,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          4,
+          5,
+          24,
+          23
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 161,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    },
+    "sample_02_1": {
+      "class_id": 1,
+      "character": "1",
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          10,
+          2,
+          18,
+          26
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 115,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          10,
+          4,
+          17,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.0,
+          13.5
+        ],
+        "foreground_pixels": 88,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    },
+    "sample_03_2": {
+      "class_id": 2,
+      "character": "2",
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          2,
+          2,
+          26,
+          26
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 227,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          4,
+          4,
+          24,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 163,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    },
+    "sample_04_3": {
+      "class_id": 3,
+      "character": "3",
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          1,
+          5,
+          27,
+          23
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 188,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          4,
+          7,
+          24,
+          21
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 119,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    },
+    "sample_05_4": {
+      "class_id": 4,
+      "character": "4",
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          3,
+          2,
+          25,
+          26
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 202,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          5,
+          4,
+          23,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 133,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    },
+    "sample_06_5": {
+      "class_id": 5,
+      "character": "5",
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          4,
+          2,
+          24,
+          26
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 222,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          5,
+          4,
+          22,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.0,
+          13.5
+        ],
+        "foreground_pixels": 166,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    },
+    "sample_07_6": {
+      "class_id": 6,
+      "character": "6",
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          4,
+          2,
+          24,
+          26
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 177,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          5,
+          4,
+          22,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.0,
+          13.5
+        ],
+        "foreground_pixels": 131,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    },
+    "sample_08_7": {
+      "class_id": 7,
+      "character": "7",
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          2,
+          2,
+          26,
+          26
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 215,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          4,
+          4,
+          24,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 147,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    },
+    "sample_09_8": {
+      "class_id": 8,
+      "character": "8",
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          7,
+          2,
+          20,
+          26
+        ],
+        "foreground_bbox_center_xy": [
+          13.0,
+          13.5
+        ],
+        "foreground_pixels": 185,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          8,
+          4,
+          19,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.0,
+          13.5
+        ],
+        "foreground_pixels": 138,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    },
+    "sample_10_9": {
+      "class_id": 9,
+      "character": "9",
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          6,
+          2,
+          22,
+          26
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 139,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          7,
+          4,
+          20,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.0,
+          13.5
+        ],
+        "foreground_pixels": 91,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    },
+    "sample_11_A": {
+      "class_id": 10,
+      "character": "A",
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          2,
+          4,
+          26,
+          25
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          14.0
+        ],
+        "foreground_pixels": 218,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          4,
+          5,
+          24,
+          23
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 157,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    },
+    "sample_12_B": {
+      "class_id": 11,
+      "character": "B",
+      "legacy": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          2,
+          2,
+          26,
+          26
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 240,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      },
+      "shared": {
+        "shape": [
+          28,
+          28
+        ],
+        "foreground_bbox_xyxy": [
+          4,
+          4,
+          24,
+          24
+        ],
+        "foreground_bbox_center_xy": [
+          13.5,
+          13.5
+        ],
+        "foreground_pixels": 178,
+        "vector_length": 784,
+        "vector_min": 0.0,
+        "vector_max": 1.0
+      }
+    }
+  },
+  "notes": [
+    "Old and new representations use the same sampled training records and stratified train/validation indices.",
+    "k is selected independently for each representation using validation macro-F1.",
+    "Crop labels are approximate visual notes, not verified ground truth; no crop accuracy is reported.",
+    "No official test image or label file is opened."
+  ]
+}

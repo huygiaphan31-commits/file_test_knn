@@ -1,0 +1,113 @@
+{
+  "experiment": "ManualKNN validation-only k sweep",
+  "created_at": "2026-10-24T19:10:45",
+  "data": {
+    "dataset": "EMNIST ByClass official train IDX only",
+    "test_idx_read": false,
+    "sample_images_used": false,
+    "class_count": 62,
+    "train_cap_per_class": 500,
+    "selected_train_pool_samples": 31000,
+    "scoring_train_samples": 30380,
+    "validation_samples": 620,
+    "validation_per_class": 10,
+    "validation_fraction": 0.2,
+    "random_state": 42,
+    "preprocessing": "preprocessing.dataset_images_to_vectors; identical vectors and split for all k",
+    "split_method": "evaluation.split_train_validation applied to the same 500/class reservoir sample",
+    "sample_id_hashes": {
+      "selected_train_pool_sample_ids_sha256": "53f7ace26aabe100c0804aa2c2a7942490f7b15886788fb534cc0b3c37627d1a",
+      "scoring_train_sample_ids_sha256": "e7a7b7a069915dff4fe37b3886deefbe9b375e9d1d232faadea0fce241773dce",
+      "validation_sample_ids_sha256": "7898e8b7a384a837bc9526af6920465b26e689816189268d2acf723468cbd6ea",
+      "validation_labels_sha256": "3f576e3b9692ff06cadc292aa5fa1f11f8f2734384186d22dac3937b408dd33a"
+    }
+  },
+  "metric": "evaluation.macro_f1 over all 62 ByClass IDs",
+  "algorithm": "Existing ManualKNN, Euclidean distance, existing majority vote and tie-break; each k evaluated independently on the same validation rows.",
+  "timings": {
+    "data_load_seconds": 2.6974107999999433,
+    "shared_preprocessing_seconds": 8.736024499999985,
+    "time_scope": "Per-k evaluation_seconds includes repeated ManualKNN Euclidean neighbor search/sorting for all validation vectors and voting; excludes shared data load, preprocessing, split, and macro-F1 aggregation."
+  },
+  "results": [
+    {
+      "k": 9,
+      "validation_macro_f1": 0.5914354759860289,
+      "evaluation_seconds": 45.93153530000018,
+      "scored_train_samples": 30380,
+      "validation_samples": 620,
+      "predicted_validation_samples": 620
+    },
+    {
+      "k": 25,
+      "validation_macro_f1": 0.5748700891103268,
+      "evaluation_seconds": 47.94121589999986,
+      "scored_train_samples": 30380,
+      "validation_samples": 620,
+      "predicted_validation_samples": 620
+    },
+    {
+      "k": 50,
+      "validation_macro_f1": 0.5431526995488085,
+      "evaluation_seconds": 46.33213209999985,
+      "scored_train_samples": 30380,
+      "validation_samples": 620,
+      "predicted_validation_samples": 620
+    },
+    {
+      "k": 100,
+      "validation_macro_f1": 0.5179741726186637,
+      "evaluation_seconds": 45.40235550000034,
+      "scored_train_samples": 30380,
+      "validation_samples": 620,
+      "predicted_validation_samples": 620
+    },
+    {
+      "k": 200,
+      "validation_macro_f1": 0.4978095760159512,
+      "evaluation_seconds": 45.73202200000014,
+      "scored_train_samples": 30380,
+      "validation_samples": 620,
+      "predicted_validation_samples": 620
+    },
+    {
+      "k": 500,
+      "validation_macro_f1": 0.45347726866518956,
+      "evaluation_seconds": 45.903704599999855,
+      "scored_train_samples": 30380,
+      "validation_samples": 620,
+      "predicted_validation_samples": 620
+    },
+    {
+      "k": 1000,
+      "validation_macro_f1": 0.39824868368372157,
+      "evaluation_seconds": 48.27256420000003,
+      "scored_train_samples": 30380,
+      "validation_samples": 620,
+      "predicted_validation_samples": 620
+    }
+  ],
+  "best_by_validation_macro_f1_then_smallest_k": {
+    "k": 9,
+    "validation_macro_f1": 0.5914354759860289,
+    "evaluation_seconds": 45.93153530000018,
+    "scored_train_samples": 30380,
+    "validation_samples": 620,
+    "predicted_validation_samples": 620
+  },
+  "historical_comparison": {
+    "k1000_paired_benchmark_reported_scores": {
+      "9": 0.5914354759860289,
+      "1000": 0.39824868368372157
+    },
+    "historical_k1000_reported_protocol": "500/class, 620 validation, 30,380 scoring train, seed 42, same shared preprocessing, train IDX only",
+    "exact_validation_sample_identity_verifiable": false,
+    "reason": "The historical k1000 artifact records protocol and scores but no validation source-sample IDs or fingerprint. The new run records IDs/hashes; exact equality cannot be established retroactively."
+  },
+  "limitations": [
+    "Validation is a deterministic holdout derived from official EMNIST train, not official test data.",
+    "Timing is local and affected by machine load; each k is run independently so timings include repeated neighbor search.",
+    "Selecting among seven k values on this validation set can optimistically bias the winning validation score.",
+    "The result says nothing directly about segmentation or external handwriting images."
+  ]
+}

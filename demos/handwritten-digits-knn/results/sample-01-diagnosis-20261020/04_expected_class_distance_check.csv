@@ -1,0 +1,7 @@
+﻿region,expected_user_confirmed,predicted_k3,expected_class_nearest_rank,distance_to_nearest_expected_class_sample,nearest_class,nearest_distance
+1,K,k,4,4.650375,k,4.089512
+2,e,c,13,6.609898,c,5.253301
+3,t,l,21,4.246912,l,3.713531
+4,q,i,56,4.685979,i,3.074855
+5,u,l,40,5.669863,l,5.105619
+6,a,0,84,5.948042,0,4.811646

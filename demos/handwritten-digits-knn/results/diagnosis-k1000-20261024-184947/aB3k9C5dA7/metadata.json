@@ -1,0 +1,15 @@
+{
+  "image": "aB3k9C5dA7.png",
+  "ground_truth": "aB3K9C5dA7",
+  "ground_truth_status": "confirmed",
+  "regions": 10,
+  "expected_char_count": 10,
+  "alignment_available": "True",
+  "prediction": "jl jk jjj j1j",
+  "region_predictions": "jljkjjjj1j",
+  "correct_regions": 0,
+  "scored_regions": 10,
+  "accuracy_on_this_image": "0.000000",
+  "debug_dir": "results\\diagnosis-k1000-20261024-184947\\aB3k9C5dA7",
+  "alignment_note": ""
+}

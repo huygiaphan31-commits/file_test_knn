@@ -1,0 +1,28 @@
+{
+  "experiment": "paired preset B validation for fixed k=9 and k=1000",
+  "timestamp_local": "2026-10-24T12:01:48",
+  "data_source": "EMNIST ByClass local official train IDX and mapping only",
+  "test_idx_opened": false,
+  "train_cap_per_class": 500,
+  "training_samples_total": 31000,
+  "training_samples_used_for_validation_scoring": 30380,
+  "validation_samples": 620,
+  "validation_fraction": 0.2,
+  "max_validation_per_class": 10,
+  "split_seed": 42,
+  "preprocessing": "current shared preprocessing for train and validation",
+  "candidate_k": [
+    9,
+    1000
+  ],
+  "validation_macro_f1": {
+    "9": 0.5914354759860289,
+    "1000": 0.39824868368372157
+  },
+  "selection_scoring_seconds_paired": 37.511337200000526,
+  "load_seconds": 4.076647899999443,
+  "preprocessing_seconds": 4.841692899999543,
+  "total_seconds": 46.45331090000036,
+  "timing_note": "One paired scoring pass computes neighbors through max k=1000, then scores both k values; shared scoring time is not an individual per-k latency.",
+  "comparison_best_macro_f1_k": 9
+}

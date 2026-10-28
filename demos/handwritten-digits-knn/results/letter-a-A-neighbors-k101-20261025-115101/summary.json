@@ -1,0 +1,66 @@
+{
+  "actual_web_configuration": {
+    "max_train_per_class": 500,
+    "training_count": 31000,
+    "mode_name": "fixed_9",
+    "actual_selected_k": 101,
+    "validation_count": 620,
+    "validation_macro_f1": 0.5133653746003887,
+    "test_idx_read": false,
+    "fixed_constant": 101
+  },
+  "sample_images_used_for_training_or_k_selection": false,
+  "mapping_spot_check": {
+    "10": "A",
+    "36": "a",
+    "17": "H",
+    "45": "j"
+  },
+  "images": [
+    {
+      "image": "test_aAbB.png",
+      "confirmed_ground_truth": "aAbB",
+      "regions": 4,
+      "ground_truth_characters": 4,
+      "alignment_valid": true,
+      "region_predictions": "uhhL",
+      "correct_regions": 0,
+      "scored_regions": 4,
+      "note": ""
+    },
+    {
+      "image": "test_abcD.png",
+      "confirmed_ground_truth": "abcD",
+      "regions": 4,
+      "ground_truth_characters": 4,
+      "alignment_valid": true,
+      "region_predictions": "cbCD",
+      "correct_regions": 2,
+      "scored_regions": 4,
+      "note": ""
+    },
+    {
+      "image": "eight-characters.png",
+      "confirmed_ground_truth": "aAbBcCdD",
+      "regions": 9,
+      "ground_truth_characters": 8,
+      "alignment_valid": false,
+      "region_predictions": "QhbBcC0lD",
+      "correct_regions": "",
+      "scored_regions": 0,
+      "note": "No positional scoring: region count differs from confirmed text."
+    },
+    {
+      "image": "aB3k9C5dA7.png",
+      "confirmed_ground_truth": "aB3K9C5dA7",
+      "regions": 10,
+      "ground_truth_characters": 10,
+      "alignment_valid": true,
+      "region_predictions": "jBjk9Cgjhj",
+      "correct_regions": 3,
+      "scored_regions": 10,
+      "note": ""
+    }
+  ],
+  "vote_method": "majority over all current web k neighbors; tie breaks follow ManualKNN implementation."
+}

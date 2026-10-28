@@ -1,0 +1,6 @@
+﻿rank,sample_id,class_id,character,euclidean_distance,image_file,image_path
+1,636858,46,k,4.089511784777463,neighbor_01_id-636858_k.png,D:\Computer-Vision-Project\demos\handwritten-digits-knn\results\nearest-neighbors-crop01\neighbor_01_id-636858_k.png
+2,18834,46,k,4.45488302620357,neighbor_02_id-18834_k.png,D:\Computer-Vision-Project\demos\handwritten-digits-knn\results\nearest-neighbors-crop01\neighbor_02_id-18834_k.png
+3,501314,46,k,4.605718399108056,neighbor_03_id-501314_k.png,D:\Computer-Vision-Project\demos\handwritten-digits-knn\results\nearest-neighbors-crop01\neighbor_03_id-501314_k.png
+4,111425,20,K,4.650375306231963,neighbor_04_id-111425_K.png,D:\Computer-Vision-Project\demos\handwritten-digits-knn\results\nearest-neighbors-crop01\neighbor_04_id-111425_K.png
+5,458218,20,K,4.688590850061533,neighbor_05_id-458218_K.png,D:\Computer-Vision-Project\demos\handwritten-digits-knn\results\nearest-neighbors-crop01\neighbor_05_id-458218_K.png

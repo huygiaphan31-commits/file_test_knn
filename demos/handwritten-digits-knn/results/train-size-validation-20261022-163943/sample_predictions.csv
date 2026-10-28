@@ -1,0 +1,7 @@
+﻿train_cap_per_class,train_samples,selected_k,image,prediction,regions,seconds,ground_truth,status
+200,12400,7,data\my_samples\sample-01.png,Ke1 iJC,6,0.24217589999898337,Ket qua (user-confirmed),
+200,12400,7,data\my_samples\sample-02.png,h Cji0il mILiLI I,14,0.44368519999989076,,
+300,18600,9,data\my_samples\sample-01.png,Ke1 iIU,6,0.15324089999921853,Ket qua (user-confirmed),
+300,18600,9,data\my_samples\sample-02.png,I Cji0jI mIbiLI i,14,0.3372866999998223,,
+500,31000,9,data\my_samples\sample-01.png,kcl iI0,6,0.4618999999984226,Ket qua (user-confirmed),
+500,31000,9,data\my_samples\sample-02.png,I Cji0jI m1L1LI i,14,1.0565988999987894,,
